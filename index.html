@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fooden</title>
+
+  <!-- Bootstrap Link -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+  <!-- FonAwosome Link -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+  <!-- OWl-Carousel Link -->
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Top Header Start -->
+    <header>
+      <div class="top-Header py-2 bg-yellow">
+        <p class="workSans-Reguler text-capitalize text-center mb-0">
+          free shipping for orders over Rs.2999
+        </p>
+      </div>
+    </header>
+    <!-- Top Header End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-red py-3 w-100">
+      <div class="container-fluid">
+        <div class="mobile-header">
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a class="navbar-brand text-white" href="#">FOODEN</a>
+          <ul>
+            <li class="mobile-icon me-3">
+              <a href="#" class="text-white">
+                <button type="button" class="btn position-relative text-white ps-0 shadow-none">
+                  <i class="fa-solid fa-cart-shopping"></i></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    7+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+
+          <div class="brand-logo mobile-device">
+            <a href="#">FOODEN</a>
+          </div>
+
+          <div class="social-icon">
+            <ul>
+              <li class="mobile-device">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+              <li class="mobile-device">
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+              </li>
+              <li class="mobile-device me-3">
+                <a href="#">
+                  <button type="button" class="btn position-relative text-white ps-0 shadow-none">
+                    <i class="fa-solid fa-cart-shopping"></i></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      7+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section Start -->
+    <section class="home-section">
+      <div class="row g-3">
+        <div class="col-lg-6 col-12">
+          <div class="vid">
+            <video autoplay muted loop id="myVideo">
+              <source src="./assets/videos/cook.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 d-flex">
+          <div class="home-slider">
+            <div class="container">
+              <div class="owl-carousel video-carousel owl-theme">
+                <div class="item">
+                  <div class="imgdiv">
+                    <img src="./assets/images/dish1.jpg" alt="dish1">
+                  </div>
+                  <h1><span>lorem</span> ipsum dolor</h1>
+                  <h4>lorem ipsum</h4>
+                  <a href="#">
+                    <button class="btn btn-MV">shop now</button>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="imgdiv">
+                    <img src="./assets/images/dish2.jpg" alt="dish1">
+                  </div>
+                  <h1>lorem ipsum dolor</h1>
+                  <h4>lorem ipsum</h4>
+                  <a href="#">
+                    <button class="btn btn-MV">shop now</button>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="imgdiv">
+                    <img src="./assets/images/dish3.jpg" alt="dish1">
+                  </div>
+                  <h1>lorem ipsum dolor</h1>
+                  <h4>lorem ipsum</h4>
+                  <a href="#">
+                    <button class="btn btn-MV">shop now</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- Product List Section Start -->
+    <section class="productList-section py-5">
+      <div class="container">
+        <h1 class="product-hed text-center text text-capitalize">shop</h1>
+
+        <ul class="nav nav-pills mb-5 mt-5" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">top sellers</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">bundels</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="owl-carousel seller-carousel owl-theme">
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/yellowjar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">lemon pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/redjar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">garlick pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/orangejar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">carrot pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/redjar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">garlick pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="owl-carousel seller-carousel owl-theme">
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/yellowjar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">lemon pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/redjar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">garlick pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/orangejar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">carrot pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/redjar.png" class="card-img-top" alt="img">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-center">garlick pickle</h5>
+                    <p class="card-text text-center">Rs. 999</p>
+                    <a href="#" class="btn btn-primary btn-card">add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Product List Section End -->
+
+    <!-- VideoImage With Text Section Start -->
+    <section class="videoImg-section mb-5">
+      <div class="videoImg">
+        <video id="videoText">
+          <source src="./assets/videos/cook.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+        <button onclick="playPauseOne()" class="playBtn">Play/Pause</button>
+      </div>
+      <div class="main-content">
+        <div class="container">
+          <div class="videoContent">
+            <h1><span>lorem</span> ipusum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni cum soluta esse at atque laborum beatae
+              neque, itaque optio fuga unde.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- VideoImage With Text Section End -->
+
+    <!-- Type of food Start -->
+    <section class="foodType">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/images/card1_img.jpg" alt="img-1" />
+              </div>
+              <div class="title-box">
+                <h3 class="title">east indian</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/images/card2_img.jpg" alt="img-2" />
+              </div>
+              <div class="title-box">
+                <h3 class="title">shouth indian</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/images/card3_img.jpg" alt="img-3" />
+              </div>
+              <div class="title-box">
+                <h3 class="title">north indian</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/images/card4_img.jpg" alt="img-4" />
+              </div>
+              <div class="title-box">
+                <h3 class="title">west indian</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Type of Food End -->
+
+    <!-- Testimonial Start -->
+    <section class="testimonial-sectioon mt-5 py-5">
+      <div class="container">
+        <div id="sync1" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="avatar">
+              <img src="./assets/images/test1.jpg" alt="test1">
+            </div>
+            <h1>
+              Lorem Ipsum dolor sit amet, consec-tetur
+              adipiscing elit, sed diam.
+            </h1>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./assets/images/test2.jpg" alt="test2">
+            </div>
+            <h1>
+              Lorem Ipsum dolor sit amet, consec-tetur
+              adipiscing elit, sed diam.
+            </h1>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./assets/images/test3.png" alt="test3">
+            </div>
+            <h1>
+              Lorem Ipsum dolor sit amet, consec-tetur
+              adipiscing elit, sed diam.
+            </h1>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./assets/images/test1.jpg" alt="test1">
+            </div>
+            <h1>
+              Lorem Ipsum dolor sit amet, consec-tetur
+              adipiscing elit, sed diam.
+            </h1>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./assets/images/test2.jpg" alt="test2">
+            </div>
+            <h1>
+              Lorem Ipsum dolor sit amet, consec-tetur
+              adipiscing elit, sed diam.
+            </h1>
+          </div>
+          <div class="item">
+            <div class="avatar">
+              <img src="./assets/images/test3.png" alt="test3">
+            </div>
+            <h1>
+              Lorem Ipsum dolor sit amet, consec-tetur
+              adipiscing elit, sed diam.
+            </h1>
+          </div>
+        </div>
+
+        <div id="sync2" class="owl-carousel owl-theme">
+          <div class="item">
+            <h1>the new york times</h1>
+          </div>
+          <div class="item">
+            <h1>the new york times</h1>
+          </div>
+          <div class="item">
+            <h1>the new york times</h1>
+          </div>
+          <div class="item">
+            <h1>the new york times</h1>
+          </div>
+          <div class="item">
+            <h1>the new york times</h1>
+          </div>
+          <div class="item">
+            <h1>the new york times</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial End -->
+
+    <!-- Newsletter Start -->
+    <section class="newsletter">
+      <div class="contain">
+        <h1>newslatter</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi ipsa laboriosam, in earum laborum
+          officiis voluptatibus autem voluptate quos consequuntur.</p>
+        <a href="#" class="btn signin-btn">sign in</a>
+      </div>
+    </section>
+    <!-- Newsletter End -->
+
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-12">
+            <a href="#">
+              <div class="logo">
+                FOODEN
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-2 col-6">
+            <ul>
+              <li><a href="#">shop</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-6">
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">return & exchanges</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-6">
+            <ul>
+              <li><a href="#">&copy; 2021</a></li>
+              <li><a href="#"> Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#"> Cookie Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-6">
+            <ul>
+              <li>follow us</li>
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2021 FOODEn, ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+  </div>
+
+
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/all.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

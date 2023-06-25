@@ -1,0 +1,934 @@
+/* fonts */
+@font-face {
+  font-family: "Work Sans Reguler";
+  src: url(../fonts/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+.workSans-Reguler {
+  font-family: "Work Sans Reguler";
+}
+
+@font-face {
+  font-family: "Monstserrat Reguler";
+  src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Monstserrat Meduim";
+  src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Monstserrat Bold";
+  src: url(../fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Monstserrat ExtraBold";
+  src: url(../fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+}
+
+.Montserrat-Reguler {
+  font-family: "Monstserrat Reguler";
+}
+
+.Montserrat-Medium {
+  font-family: "Monstserrat Meduim";
+}
+
+.Montserrat-Bold {
+  font-family: "Monstserrat Bold";
+}
+
+.Montserrat-ExtraBold {
+  font-family: "Monstserrat ExtraBold";
+}
+
+@font-face {
+  font-family: "Merriweather Light";
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+  font-family: "Merriweather Reguler";
+  src: url(../fonts/Merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Merriweather Bold";
+  src: url(../fonts/Merriweather/Merriweather-Bold.ttf);
+}
+
+.Merriweather-Light {
+  font-family: "Merriweather Light";
+}
+
+.Merriweather-Reguler {
+  font-family: "Merriweather Reguler";
+}
+
+.Merriweather-Bold {
+  font-family: "Merriweather Bold";
+}
+
+@font-face {
+  font-family: "Chomsky";
+  src: url(../fonts/comsky/Chomsky.otf);
+}
+
+/* Root Colors */
+
+:root {
+  --yellow: #ff9933;
+  --red: #9e3223;
+  /* --violatePink500: #339999; */
+  --violatePink: #643843;
+  --violatePink500: #99627a;
+  --violatePink400: #c88ea7;
+  --violatePink300: #e7cbcb;
+  --violatePink200: #ffecec;
+}
+
+.bg-yellow {
+  background-color: #ff9933;
+}
+
+.bg-red {
+  background-color: #643843;
+}
+
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Monstserrat Reguler";
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+/* Top-Header Start */
+.top-Header {
+  background-color: #e7cbcb;
+  color: #643843;
+}
+
+/* Top-Header End */
+
+/* Navbar Start */
+.mobile-header {
+  display: none;
+}
+
+.mobile-header .mobile-icon {
+  display: none;
+}
+
+.brand-logo {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.brand-logo a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Monstserrat Medium";
+  font-size: 35px;
+}
+
+.navbar {
+  overflow: hidden;
+  z-index: 11;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-family: "Monstserrat Reguler";
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--yellow);
+}
+
+.navbar .navbar-collapse ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-collapse ul li {
+  margin-left: 30px;
+}
+
+.navbar .navbar-collapse ul li a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-collapse ul li a:hover {
+  color: var(--yellow);
+}
+
+.navbar .navbar-toggler {
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+.mobile-header .navbar-brand {
+  margin: 0;
+  font-family: "Monstserrat Medium";
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 15px 0px #fff;
+}
+
+/* Navbar End */
+
+/* Home Section Start */
+
+.home-section {
+  position: relative;
+  padding: 3rem 6rem;
+  background-color: var(--violatePink200);
+}
+
+.home-section .vid {
+  height: 70vh;
+}
+
+.home-section #myVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.home-section .home-slider {
+  width: 100%;
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .home-section {
+  background-image: linear-gradient(45deg, rgb(0 0 0 / 25%), rgb(0 0 0 / 25%)), url(../images/homeback.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 9%;
+  padding-bottom: 3%;
+} */
+.home-section .owl-item .item .imgdiv {
+  width: 70%;
+  margin: auto;
+  height: 320px;
+  margin-bottom: 2rem;
+}
+
+.home-section .owl-item .item .imgdiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.home-section .owl-item .item h1 {
+  text-align: center;
+  /* color: #fff; */
+  text-transform: capitalize;
+  font-family: "Merriweather Reguler";
+  font-size: 55px;
+}
+
+.home-section .owl-item .item h4 {
+  font-family: "Monstserrat Reguler";
+  text-align: center;
+  /* color: #fff; */
+  text-transform: capitalize;
+  margin: 2rem 0;
+  font-size: 24px;
+}
+
+.home-section .owl-item .item .btn-MV {
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 1rem 5.75rem;
+  background-color: var(--violatePink500);
+  text-transform: capitalize;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-family: "Monstserrat Reguler";
+  font-size: 18px;
+}
+
+.home-section .owl-item .item .btn-MV:hover {
+  background-color: #55283c;
+}
+
+.home-section .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.home-section .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: var(--violatePink300);
+  display: block;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+
+.seller-carousel .owl-nav.disabled {
+  display: block;
+}
+
+.owl-carousel button.owl-prev,
+.owl-carousel button.owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: var(--violatePink);
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  font-size: 70px;
+}
+
+.owl-carousel button.owl-prev {
+  left: -1%;
+}
+
+.owl-carousel button.owl-next {
+  right: -1%;
+}
+
+.owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--violatePink400);
+}
+
+/* Home Section End */
+
+/* ProductList Start */
+
+.productList-section {
+  font-family: "Merriweather Reguler";
+}
+
+.productList-section .nav {
+  display: flex;
+  justify-content: center;
+}
+
+.productList-section .nav .nav-link {
+  font-family: "Monstserrat Reguler";
+  text-transform: capitalize;
+  color: var(--violatePink);
+  border-radius: 0;
+  border-bottom: 1px solid var(--violatePink);
+}
+
+.productList-section .nav-pills .nav-link.active {
+  background-color: transparent;
+  border-bottom: 2px solid var(--violatePink);
+}
+
+.productList-section .seller-carousel .card .card-img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  mix-blend-mode: multiply;
+  height: 290px;
+}
+
+.productList-section .seller-carousel .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.productList-section .tab-content .card {
+  border: none;
+  background-color: var(--violatePink200);
+}
+
+.productList-section .tab-content .card .card-title {
+  text-transform: uppercase;
+  font-family: "Monstserrat Meduim";
+}
+
+.productList-section .tab-content .card .card-text {
+  font-family: "Monstserrat Reguler";
+}
+
+.productList-section .tab-content .card .btn-card {
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 0.7rem 0.75rem;
+  background-color: var(--violatePink500);
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-family: "Monstserrat Reguler";
+  font-size: 16px;
+}
+
+.productList-section .tab-content .card .btn-card:hover {
+  background-color: #55283c;
+}
+
+/* ProductList Start */
+
+/* VideoImg Section Start */
+
+.videoImg-section {
+  overflow: hidden;
+  position: relative;
+}
+
+.videoImg-section .videoImg {
+  width: calc(100% - 20%);
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoImg-section .videoImg video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.videoImg-section .main-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoImg-section .playBtn {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 0.7rem 0.75rem;
+  background-color: var(--violatePink500);
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-family: "Monstserrat Reguler";
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.videoImg-section .playBtn:hover {
+  background-color: #55283c;
+}
+
+.videoImg-section .videoContent {
+  background-color: var(--violatePink200);
+  width: 40%;
+  margin-left: auto;
+}
+
+.videoImg-section .videoContent h1 span {
+  display: block;
+}
+
+.videoImg-section .videoContent {
+  padding: 3rem;
+}
+
+.videoImg-section .videoContent h1 {
+  font-family: "Merriweather Medium";
+  text-transform: capitalize;
+}
+
+.videoImg-section .videoContent p {
+  font-family: "Monstserrat Reguler";
+}
+
+/* VideoImg Section End */
+
+/* FoodType Section Start */
+
+.foodType .card {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  opacity: 1;
+  transition: 0.3s;
+}
+.foodType .card:hover {
+  .card-img img {
+    transform: scale(1.1);
+  }
+}
+
+.foodType .card .title-box {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foodType .card .title-box .title {
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Monstserrat Medium";
+  font-weight: 600;
+}
+.foodType .card .card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.foodType .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+/* .foodType .container:hover> :not(:hover) {
+  filter: brightness(0.5);
+} */
+
+/* FoodType Section End */
+
+/* Testimonial Section Start */
+.testimonial-sectioon {
+  background-color: var(--violatePink);
+}
+
+.testimonial-sectioon .avtar {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.testimonial-sectioon .item {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-sectioon .item .avatar {
+  width: 400px;
+  height: 200px;
+}
+
+.testimonial-sectioon .item .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#sync1 .item {
+  /* / background: #0c83e7; */
+  padding: 80px 140px;
+  margin: 5px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  font-family: "Merriweather Reguler";
+}
+
+#sync2 .item {
+  /* background: #C9C9C9; */
+  padding: 10px 0px;
+  margin: 5px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#sync2 .item h1 {
+  font-size: 40px;
+  font-family: "Chomsky";
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+#sync2 .current .item h1 {
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 2px solid #ffff;
+}
+
+#sync1.owl-theme {
+  position: relative;
+}
+
+/* Testimonial Section End */
+
+/* Newsletter Section Start */
+.newsletter {
+  background-image: url(../images/newslatter.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: end;
+}
+
+.newsletter .contain {
+  width: 25%;
+  margin-top: 5rem;
+  margin-right: 20rem;
+}
+
+.newsletter h1 {
+  text-transform: capitalize;
+  color: var(--violatePink);
+  font-family: "Merriweather SemiBold";
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.newsletter .signin-btn {
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  padding: 0.7rem 4rem;
+  background-color: var(--violatePink500);
+  text-transform: capitalize;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-family: "Monstserrat Reguler";
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.newsletter .signin-btn:hover {
+  background-color: var(--violatePink);
+}
+
+/* Newsletter Section End */
+
+/* Footer Section Start */
+
+.footer-section {
+  background-color: var(--violatePink);
+  padding-top: 5%;
+}
+
+.footer-section .logo {
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Monstserrat Medium";
+  font-weight: 500;
+}
+
+.footer-section ul li {
+  line-height: 3;
+}
+
+.footer-section ul li a,
+.footer-section ul li {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Monstserrat Reguler";
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  border-bottom: 1px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-section ul li a svg {
+  font-size: 22px;
+}
+
+.footer-section .copyright {
+  padding: 2rem 0;
+  border-top: 1px solid #fff;
+  margin-top: 3%;
+}
+
+.footer-section .copyright p {
+  margin: 0;
+  color: #fff;
+  font-family: "Monstserrat Reguler";
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Footer Section End */
+
+/* ============================== Responsive Css Start =============================== */
+
+/* Navbar start */
+@media screen and (max-width: 992px) {
+  .mobile-header .mobile-icon {
+    display: block;
+  }
+
+  .mobile-device {
+    display: none;
+  }
+
+  .mobile-header {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar .navbar-collapse ul li {
+    margin-left: 0px;
+  }
+
+  .home-section .home-slider {
+    margin-top: 2rem;
+  }
+}
+
+/* Navbar end */
+
+/* Home-Section Start */
+
+@media screen and (max-width: 767.98px) {
+  /* .home-section {
+    padding-top: 30%;
+    background-size: 250% 100%;
+  } */
+  .home-section {
+    padding: 1rem;
+  }
+
+  .home-section .owl-item .item .imgdiv {
+    width: 100%;
+    height: 230px;
+  }
+
+  .home-section .owl-item .item h1 {
+    font-size: 40px;
+  }
+
+  .home-section .owl-item .item h1 span {
+    display: block;
+  }
+
+  .home-section .owl-item .item .btn-MV {
+    width: 95%;
+  }
+
+  .home-section .vid {
+    height: 50vh;
+  }
+
+  /* Video With Text Section Start*/
+
+  .videoImg-section .videoImg {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .videoImg-section .main-content {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    bottom: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25%;
+  }
+
+  .videoImg-section .videoContent {
+    width: 100%;
+    margin-left: inherit;
+  }
+
+  .videoImg-section .videoContent h1 {
+    font-size: 50px;
+  }
+
+  /* Video With Text Section Start*/
+
+  /* Testimonial Section Start */
+  .testimonial-sectioon .item .avatar {
+    width: 200px;
+  }
+
+  #sync1 .item {
+    padding: 50px 0px;
+    flex-direction: column;
+  }
+
+  #sync1 .item h1 {
+    font-size: 32px;
+  }
+
+  #sync2 .item h1 {
+    font-size: 28px;
+  }
+
+  /* Tedtimonial Section End */
+  .newsletter {
+    background-size: 300% 100%;
+    backdrop-filter: blur(5px);
+    align-items: center;
+  }
+
+  .newsletter .contain {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* footer section Start */
+
+  .footer-section .row div:nth-of-type(2) {
+    margin: 10% 0;
+  }
+
+  .footer-section .row div:nth-of-type(3) {
+    margin: 10% 0;
+  }
+
+  /* footer section End */
+}
+
+@media screen and (max-width: 1199.98px) {
+  .home-section .owl-item .item h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .home-section .vid {
+    height: 40vh;
+  }
+
+  .videoImg-section .videoImg {
+    height: 40vh;
+  }
+
+  .videoImg-section .videoContent h1 {
+    font-size: 30px;
+  }
+
+  .videoImg-section .videoContent p {
+    font-size: 12px;
+  }
+
+  #sync1 .item {
+    padding: 50px 30px;
+  }
+
+  .newsletter {
+    background-size: 200% 100%;
+    backdrop-filter: blur(5px);
+    height: 55vh;
+  }
+
+  .newsletter .contain {
+    width: 50%;
+    margin-top: 4rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .home-section {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .home-section .vid {
+    height: 55vh;
+  }
+
+  .home-section .owl-item .item .imgdiv {
+    width: 90%;
+    height: 270px;
+  }
+
+  #sync1 .item {
+    padding: 50px 30px;
+  }
+  .foodType .card{
+    height: 300px;
+  }
+  .newsletter .contain {
+    width: 37%;
+    margin-top: 3rem;
+    margin-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .home-section .vid {
+    height: 55vh;
+  }
+}
